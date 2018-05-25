@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule index.html /index.php
+RewriteRule students.html /students.php
+RewriteRule contact.html /contact.php
+RewriteRule threecolumn.html /threecolumn.php
+RewriteRule video1.html /video1.php
+RewriteRule theory.html /theory.php
+RewriteRule   reportcard.html/(.*)/(.*)  /reportcard.php?rollno=$1
+RewriteRule   students.html/(.*)  /students.php?year=$1
+RewriteRule   guestbook.html/(.*)/(.*)  /guestbook.php?id=$1
+RewriteRule   compare.html/(.*)  /compare.php?testid=$1
