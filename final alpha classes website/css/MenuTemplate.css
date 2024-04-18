@@ -1,0 +1,216 @@
+ul.ewpmenu {
+	/*border:0;
+	border-color:green;*/
+	z-index:1000;
+}
+
+ul.ewpmenu,ul.ewpmenu ul{
+	/* Main BG 1 */
+	margin:0;
+	list-style:none;
+	padding:0;
+	background-color:transparent;
+	/*border-width:1px;
+	border-style:solid;
+	border-color:#5f5f5f;*/
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	z-index:1000;
+}
+
+/* Submenu */
+ul.ewpmenu ul{
+	display:none;
+	position:absolute;
+	left:0;
+	top:100%;
+	border-style:solid;
+	
+	-moz-box-shadow:1.5px 1.5px 3px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow:1.5px 1.5px 3px rgba(0, 0, 0, 0.25);
+	box-shadow:1.5px 1.5px 3px rgba(0, 0, 0, 0.25);
+	
+	padding:0 10px 10px;
+	/*background-color:#424542;
+	border-color:#FFF;*/
+	background-color:#f0f0f0;
+	border-color:#979797;
+	border-width:1px;
+	
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;	
+	z-index:1000;
+}
+/* vertical menu */
+ul.vertical ul{
+	left:100%;
+	top:0;
+	z-index:1000;
+}
+ul.horizontal ul{
+	left:0;
+	top:100%;
+	z-index:1000;
+}
+ul.ewpmenu li:hover>*{
+	display:block;
+	z-index:1000;
+}
+ul.ewpmenu li:hover{
+	position:relative;
+	z-index:1000;
+}
+ul.ewpmenu ul ul{
+	position:absolute;
+	left:100%;
+	top:0;
+	z-index:1000;
+}
+ul.ewpmenu{
+	display:block;
+	font-size:0;
+	float:left;
+	z-index:1000;
+}
+ul.ewpmenu li{
+	display:block;
+	z-index:1000;
+	white-space:nowrap;
+	/*font-size:0;*/
+	float:left;
+}
+/* vertical menu */
+ul.vertical li{
+	float:none;
+	line-height:30px;
+	z-index:1000;
+}
+ul.horizontal li{
+	float:left;
+	z-index:1000;
+}
+ul.ewpmenu>li,ul.ewpmenu li{
+	margin:0;
+	z-index:1000;
+}
+ul.ewpmenu a:active, ul.ewpmenu a:focus{
+	outline-style:none;
+	z-index:1000;
+}
+ul.ewpmenu a{
+	/* MAIN BG */
+	display:block;
+	z-index:1000;
+	vertical-align:middle;
+	text-align:left;
+	/*text-decoration:none;
+	font:bold 14px Trebuchet MS;*/
+	/*color:#000;*/
+	/*text-shadow:#FFF 0 0 1px;*/
+	cursor:pointer;
+	padding:14px;
+	padding-top:1px;
+	padding-bottom:1px;
+	background-color:transparent;
+	/*
+	background-image:url("mainbk.png");*/
+	background-repeat:repeat;
+	background-position:0 0;
+	
+	/*
+	border-width:0 0 0 1px;
+	border-style:solid;
+	border-color:#C0C0C0;*/
+}ul.ewpmenu ul li{
+	float:none;
+	margin:10px 0 0;
+	line-height: 15px;
+	/*border-top: solid 1px #fff;
+	border-bottom: solid 1px #e0e0e0;*/
+	z-index:1000;
+}
+ul.ewpmenu ul a{
+	text-align:left;
+	padding:4px;
+	/*background-color:#424542;*/
+	background-image:none;
+	border-width:0;
+	border-radius:0px;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	/*font:14px Tahoma;*/
+	/*color:#FFF;
+	text-decoration:none;*/
+	/*text-shadow:#FFF 0 0 0;*/
+	z-index:1000;
+}
+ul.ewpmenu li:hover>a {
+	/* Main Rollover */
+	background-position:0 100px;
+	/*background-color:#444444;
+	border-color:#C0C0C0;border-style:solid;*/
+	/*font:bold 14px Trebuchet MS;*/
+	/*color:#FFF;*/
+	/*text-decoration:none;*/
+	/*text-shadow:#FFF 0 0 1px;*/
+	/*background-image:url("mainbk.png");*/
+	z-index:1000;
+}
+ul.ewpmenu img{
+	border:none;
+	vertical-align:middle;
+	margin-right:10px;}
+ul.ewpmenu img.over{
+	display:none;}
+ul.ewpmenu li:hover > a img.def{
+	display:none;}
+ul.ewpmenu li:hover > a img.over{
+	display:inline;
+	z-index:1000;
+}
+	
+ul.ewpmenu span {
+	display:block;
+	z-index:1000;
+	overflow:visible;
+	background-position:right center;
+	background-repeat:no-repeat;
+	padding-right:0px;
+}
+/* flash in main menu */
+ul.ewpmenu span.flash {
+	padding-top:1px;
+}
+/* flash in submenu */
+ul.ewpmenu ul span.flash {
+	padding-top:0px;
+}
+ul.ewpmenu ul span.submenu {
+	background-image:url("../media/ewp_list_04.gif");
+	padding-right:24px;
+	z-index:1000;
+}
+ul.ewpmenu ul li:hover>a{
+	/*background-color:#424542;*/
+	background-image:none;
+	z-index:1000;
+	/*font:14px Tahoma;*/
+	/*color:#F2B20E;
+	text-decoration:none;*/
+	/*text-shadow:#FFF 0 0 0;*/
+}
+/*
+ul.ewpmenu li.topfirst>a{
+	height:20px;line-height:20px;border-width:0;border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;-webkit-border-radius:4px;-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;}
+ul.ewpmenu li.topfirst:hover>a{
+	line-height:20px;}
+ul.ewpmenu li.topmenu>a{
+	height:20px;line-height:20px;}
+ul.ewpmenu li.topmenu:hover>a{
+	line-height:20px;}
+ul.ewpmenu li.toplast>a{
+	height:20px;line-height:20px;border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0;-webkit-border-radius:0;-webkit-border-top-right-radius:4px;-webkit-border-bottom-right-radius:4px;}
+ul.ewpmenu li.toplast:hover>a{
+	line-height:20px;}*/
